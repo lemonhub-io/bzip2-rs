@@ -1,0 +1,39 @@
+[package]
+name = "bzip2-rs"
+version = "1.0.8"
+edition = "2021"
+description = "A faithful, line-for-line Rust port of bzip2/libbzip2 1.0.8"
+license = "Apache-2.0"
+publish = false
+
+[lib]
+name = "bz2"
+crate-type = ["rlib", "staticlib", "cdylib"]
+
+[[bin]]
+name = "bzip2"
+path = "src/bin/bzip2.rs"
+
+[[bin]]
+name = "bzip2recover"
+path = "src/bin/bzip2recover.rs"
+
+[[bin]]
+name = "minibz2"
+path = "src/bin/minibz2.rs"
+
+[[bin]]
+name = "spewG"
+path = "src/bin/spewg.rs"
+
+[[bin]]
+name = "unzcrash"
+path = "src/bin/unzcrash.rs"
+
+[[bin]]
+name = "mk251"
+path = "src/bin/mk251.rs"
+
+[profile.release]
+opt-level = 2
+debug = true

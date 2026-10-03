@@ -1,0 +1,11 @@
+/target
+
+# bzip2 test artifacts
+*.tst
+*.rb2
+rec*bz2
+sample[123].tst
+
+# editor/OS
+*.swp
+.DS_Store
